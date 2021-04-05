@@ -3585,6 +3585,2398 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "PhotonULHasPix",
+            "version": 2,
+            "inputs": [
+                {
+                    "name": "year",
+                    "type": "string"
+                },
+                {
+                    "name": "ValType",
+                    "type": "string"
+                },
+                {
+                    "name": "WorkingPoint",
+                    "type": "string"
+                },
+                {
+                    "name": "HasPixBin",
+                    "type": "string"
+                }
+            ],
+            "output": {
+                "name": "weight",
+                "type": "real"
+            },
+            "data": {
+                "nodetype": "category",
+                "input": "year",
+                "content": [
+                    {
+                        "key": "2017",
+                        "value": {
+                            "nodetype": "category",
+                            "input": "ValType",
+                            "content": [
+                                {
+                                    "key": "sf",
+                                    "value": {
+                                        "nodetype": "category",
+                                        "input": "WorkingPoint",
+                                        "content": [
+                                            {
+                                                "key": "Loose",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.969808042049408
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.970612645149231
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9732792377471924
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.900342583656311
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.8989883065223694
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9251900911331177
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Medium",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9699590802192688
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9702274799346924
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9740562438964844
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9031286239624023
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9046440124511719
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.922823429107666
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Tight",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9700028300285339
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9700520634651184
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9742740392684937
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9066860675811768
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9062342643737793
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9281519055366516
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "MVA",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9709576368331909
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9698163866996765
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9761856198310852
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9047545790672302
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.8967701196670532
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9386085271835327
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "key": "syst",
+                                    "value": {
+                                        "nodetype": "category",
+                                        "input": "WorkingPoint",
+                                        "content": [
+                                            {
+                                                "key": "Loose",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.969808042049408
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.970612645149231
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9732792377471924
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.900342583656311
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.8989883065223694
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9251900911331177
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Medium",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9699590802192688
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9702274799346924
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9740562438964844
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9031286239624023
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9046440124511719
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.922823429107666
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Tight",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9700028300285339
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9700520634651184
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9742740392684937
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9066860675811768
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9062342643737793
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9281519055366516
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "MVA",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9709576368331909
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9698163866996765
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9761856198310852
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9047545790672302
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.8967701196670532
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9386085271835327
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "key": "2018",
+                        "value": {
+                            "nodetype": "category",
+                            "input": "ValType",
+                            "content": [
+                                {
+                                    "key": "sf",
+                                    "value": {
+                                        "nodetype": "category",
+                                        "input": "WorkingPoint",
+                                        "content": [
+                                            {
+                                                "key": "Loose",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9622693061828613
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9644609689712524
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9632875323295593
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.8832932710647583
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.884321928024292
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9051449298858643
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Medium",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.962841808795929
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9649487733840942
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9637523293495178
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.8860045671463013
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.8864197731018066
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9067507982254028
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Tight",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.962809145450592
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9650019407272339
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.963333785533905
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.8872271776199341
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.8867345452308655
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9090075492858887
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "MVA",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9634109735488892
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9640674591064453
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.96570885181427
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.8777016997337341
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.8700405955314636
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9113782048225403
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "key": "syst",
+                                    "value": {
+                                        "nodetype": "category",
+                                        "input": "WorkingPoint",
+                                        "content": [
+                                            {
+                                                "key": "Loose",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9622693061828613
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9644609689712524
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9632875323295593
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.8832932710647583
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.884321928024292
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9051449298858643
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Medium",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.962841808795929
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9649487733840942
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9637523293495178
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.8860045671463013
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.8864197731018066
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9067507982254028
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Tight",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.962809145450592
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9650019407272339
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.963333785533905
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.8872271776199341
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.8867345452308655
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9090075492858887
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "MVA",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9634109735488892
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9640674591064453
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.96570885181427
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.8777016997337341
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.8700405955314636
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9113782048225403
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "key": "2016preVFP",
+                        "value": {
+                            "nodetype": "category",
+                            "input": "ValType",
+                            "content": [
+                                {
+                                    "key": "sf",
+                                    "value": {
+                                        "nodetype": "category",
+                                        "input": "WorkingPoint",
+                                        "content": [
+                                            {
+                                                "key": "Loose",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.988332211971283
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9866481423377991
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9929766654968262
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9876019358634949
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9763740301132202
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 1.0028654336929321
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Medium",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9873158931732178
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9860473275184631
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9912369847297668
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9898603558540344
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9767642617225647
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 1.0075687170028687
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Tight",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9871942400932312
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9855011701583862
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9917649626731873
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.98772794008255
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9751197695732117
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 1.0041183233261108
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "MVA",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9888295531272888
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9863584041595459
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9941162467002869
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9858108162879944
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9748997092247009
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 1.0032581090927124
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "key": "syst",
+                                    "value": {
+                                        "nodetype": "category",
+                                        "input": "WorkingPoint",
+                                        "content": [
+                                            {
+                                                "key": "Loose",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.988332211971283
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9866481423377991
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9929766654968262
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9876019358634949
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9763740301132202
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 1.0028654336929321
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Medium",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9873158931732178
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9860473275184631
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9912369847297668
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9898603558540344
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9767642617225647
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 1.0075687170028687
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Tight",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9871942400932312
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9855011701583862
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9917649626731873
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.98772794008255
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9751197695732117
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 1.0041183233261108
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "MVA",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9888295531272888
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9863584041595459
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9941162467002869
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9858108162879944
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9748997092247009
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 1.0032581090927124
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "key": "2016postVFP",
+                        "value": {
+                            "nodetype": "category",
+                            "input": "ValType",
+                            "content": [
+                                {
+                                    "key": "sf",
+                                    "value": {
+                                        "nodetype": "category",
+                                        "input": "WorkingPoint",
+                                        "content": [
+                                            {
+                                                "key": "Loose",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9796813130378723
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9784602522850037
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9851109981536865
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9288223385810852
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9508937001228333
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9088952541351318
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Medium",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9803594946861267
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9793888926506042
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9853380918502808
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9305858016014099
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9537610411643982
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9084982872009277
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Tight",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9810789227485657
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.979441225528717
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9865486025810242
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9307316541671753
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9538930654525757
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9077742099761963
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "MVA",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9801149368286133
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9786657691001892
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9852397441864014
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9342148303985596
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9475960731506348
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.925015926361084
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "key": "syst",
+                                    "value": {
+                                        "nodetype": "category",
+                                        "input": "WorkingPoint",
+                                        "content": [
+                                            {
+                                                "key": "Loose",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9796813130378723
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9784602522850037
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9851109981536865
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9288223385810852
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9508937001228333
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9088952541351318
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Medium",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9803594946861267
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9793888926506042
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9853380918502808
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9305858016014099
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9537610411643982
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9084982872009277
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Tight",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9810789227485657
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.979441225528717
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9865486025810242
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9307316541671753
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9538930654525757
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9077742099761963
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "MVA",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "HasPixBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9801149368286133
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9786657691001892
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9852397441864014
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9342148303985596
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9475960731506348
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.925015926361084
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "PhotonULCSEV",
+            "version": 2,
+            "inputs": [
+                {
+                    "name": "year",
+                    "type": "string"
+                },
+                {
+                    "name": "ValType",
+                    "type": "string"
+                },
+                {
+                    "name": "WorkingPoint",
+                    "type": "string"
+                },
+                {
+                    "name": "CSEVBin",
+                    "type": "string"
+                }
+            ],
+            "output": {
+                "name": "weight",
+                "type": "real"
+            },
+            "data": {
+                "nodetype": "category",
+                "input": "year",
+                "content": [
+                    {
+                        "key": "2017",
+                        "value": {
+                            "nodetype": "category",
+                            "input": "ValType",
+                            "content": [
+                                {
+                                    "key": "sf",
+                                    "value": {
+                                        "nodetype": "category",
+                                        "input": "WorkingPoint",
+                                        "content": [
+                                            {
+                                                "key": "Loose",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9918630719184875
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9960379600524902
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9883415699005127
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9615716934204102
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9734103679656982
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9522903561592102
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Medium",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9925006628036499
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9961283206939697
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9895386099815369
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9638652205467224
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9741217494010925
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9562274813652039
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Tight",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9929249882698059
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9963372945785522
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9902243614196777
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9649930000305176
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9753555059432983
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9568137526512146
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "MVA",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9925501942634583
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9951035976409912
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9904792308807373
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9611306190490723
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9723559021949768
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9510602951049805
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "key": "syst",
+                                    "value": {
+                                        "nodetype": "category",
+                                        "input": "WorkingPoint",
+                                        "content": [
+                                            {
+                                                "key": "Loose",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9918630719184875
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9960379600524902
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9883415699005127
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9615716934204102
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9734103679656982
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9522903561592102
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Medium",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9925006628036499
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9961283206939697
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9895386099815369
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9638652205467224
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9741217494010925
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9562274813652039
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Tight",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9929249882698059
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9963372945785522
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9902243614196777
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9649930000305176
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9753555059432983
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9568137526512146
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "MVA",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9925501942634583
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9951035976409912
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9904792308807373
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9611306190490723
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9723559021949768
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9510602951049805
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "key": "2018",
+                        "value": {
+                            "nodetype": "category",
+                            "input": "ValType",
+                            "content": [
+                                {
+                                    "key": "sf",
+                                    "value": {
+                                        "nodetype": "category",
+                                        "input": "WorkingPoint",
+                                        "content": [
+                                            {
+                                                "key": "Loose",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9903073906898499
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9954736828804016
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9845041632652283
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9583716988563538
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9676946401596069
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9511198401451111
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Medium",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9906979203224182
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9955956339836121
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9851135611534119
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9613919854164124
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9692592024803162
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9554758071899414
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Tight",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9906294941902161
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9954323172569275
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9851713180541992
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9603511095046997
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9680880904197693
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9544321298599243
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "MVA",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9910457730293274
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9950309991836548
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9862050414085388
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9551125168800354
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9632577300071716
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9471067190170288
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "key": "syst",
+                                    "value": {
+                                        "nodetype": "category",
+                                        "input": "WorkingPoint",
+                                        "content": [
+                                            {
+                                                "key": "Loose",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9903073906898499
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9954736828804016
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9845041632652283
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9583716988563538
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9676946401596069
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9511198401451111
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Medium",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9906979203224182
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9955956339836121
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9851135611534119
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9613919854164124
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9692592024803162
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9554758071899414
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Tight",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9906294941902161
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9954323172569275
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9851713180541992
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9603511095046997
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9680880904197693
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9544321298599243
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "MVA",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9910457730293274
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9950309991836548
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9862050414085388
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9551125168800354
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9632577300071716
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9471067190170288
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "key": "2016preVFP",
+                        "value": {
+                            "nodetype": "category",
+                            "input": "ValType",
+                            "content": [
+                                {
+                                    "key": "sf",
+                                    "value": {
+                                        "nodetype": "category",
+                                        "input": "WorkingPoint",
+                                        "content": [
+                                            {
+                                                "key": "Loose",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9950939416885376
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9971762299537659
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9929205775260925
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9948105216026306
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9959080219268799
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9926673173904419
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Medium",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9950078725814819
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9972783327102661
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9924907684326172
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9957414865493774
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9959373474121094
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9946746230125427
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Tight",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9949457049369812
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9968909025192261
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.992946445941925
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9965704083442688
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9963719248771667
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9959185719490051
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "MVA",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9952889084815979
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9969298243522644
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9933314919471741
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9933009743690491
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9926892518997192
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9939557313919067
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "key": "syst",
+                                    "value": {
+                                        "nodetype": "category",
+                                        "input": "WorkingPoint",
+                                        "content": [
+                                            {
+                                                "key": "Loose",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9950939416885376
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9971762299537659
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9929205775260925
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9948105216026306
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9959080219268799
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9926673173904419
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Medium",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9950078725814819
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9972783327102661
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9924907684326172
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9957414865493774
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9959373474121094
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9946746230125427
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Tight",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9949457049369812
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9968909025192261
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.992946445941925
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9965704083442688
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9963719248771667
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9959185719490051
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "MVA",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9952889084815979
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9969298243522644
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9933314919471741
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9933009743690491
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9926892518997192
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9939557313919067
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "key": "2016postVFP",
+                        "value": {
+                            "nodetype": "category",
+                            "input": "ValType",
+                            "content": [
+                                {
+                                    "key": "sf",
+                                    "value": {
+                                        "nodetype": "category",
+                                        "input": "WorkingPoint",
+                                        "content": [
+                                            {
+                                                "key": "Loose",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.994726300239563
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9962555766105652
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9939569234848022
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9862968325614929
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9921886920928955
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9821236729621887
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Medium",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9948632717132568
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9964942932128906
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9938592910766602
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9874398708343506
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.994679868221283
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9814269542694092
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Tight",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9951184391975403
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9967025518417358
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9940652847290039
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9871205687522888
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9955747127532959
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9793383479118347
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "MVA",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9951413869857788
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9962645769119263
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9945706725120544
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9851769208908081
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9887195229530334
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9833487868309021
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "key": "syst",
+                                    "value": {
+                                        "nodetype": "category",
+                                        "input": "WorkingPoint",
+                                        "content": [
+                                            {
+                                                "key": "Loose",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.994726300239563
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9962555766105652
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9939569234848022
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9862968325614929
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9921886920928955
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9821236729621887
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Medium",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9948632717132568
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9964942932128906
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9938592910766602
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9874398708343506
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.994679868221283
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9814269542694092
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "Tight",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9951184391975403
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9967025518417358
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9940652847290039
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9871205687522888
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9955747127532959
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9793383479118347
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "key": "MVA",
+                                                "value": {
+                                                    "nodetype": "category",
+                                                    "input": "CSEVBin",
+                                                    "content": [
+                                                        {
+                                                            "key": "EBInc",
+                                                            "value": 0.9951413869857788
+                                                        },
+                                                        {
+                                                            "key": "EBHighR9",
+                                                            "value": 0.9962645769119263
+                                                        },
+                                                        {
+                                                            "key": "EBLowR9",
+                                                            "value": 0.9945706725120544
+                                                        },
+                                                        {
+                                                            "key": "EEInc",
+                                                            "value": 0.9851769208908081
+                                                        },
+                                                        {
+                                                            "key": "EEHighR9",
+                                                            "value": 0.9887195229530334
+                                                        },
+                                                        {
+                                                            "key": "EELowR9",
+                                                            "value": 0.9833487868309021
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
         }
     ]
 }
