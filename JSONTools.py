@@ -72,10 +72,14 @@ def SFyearwise(files=[],names=[],valtypes=["sf","syst"]):
     return output
 
 
-def CSEVSFs(files,name,i):
+def CSEVSFs(files,name,i,IsSF="sf"):
     file=TFile(files[name])
     hist=file.Get(name+"ID/SF_CSEV_"+name+"ID")
-    SF=hist.GetBinContent(i)
+    SF=0
+    if IsSF=="sf":
+        SF=hist.GetBinContent(i)
+    else:
+        SF=hist.GetBinError(i)
     return SF
 
 def CSEVSFyearwise(files=[],names=[],valtypes=["sf","syst"]):
@@ -96,7 +100,7 @@ def CSEVSFyearwise(files=[],names=[],valtypes=["sf","syst"]):
                                             "nodetype": "category",
                                             "input": "CSEVBin",
                                             "content": [schema.CategoryItem.parse_obj({"key": binlist[i-1], 
-                                                                                       "value": CSEVSFs(files,name,i)})
+                                                                                       "value": CSEVSFs(files,name,i,val)})
                                                         for i in range(1,7)
                                                        ],
                                         })
@@ -109,10 +113,14 @@ def CSEVSFyearwise(files=[],names=[],valtypes=["sf","syst"]):
                 ],
     })
     return output
-def HasPixSFs(files,name,i):
+def HasPixSFs(files,name,i,IsSF="sf"):
     file=TFile(files[name])
     hist=file.Get(name+"ID/SF_HasPix_"+name+"ID")
-    SF=hist.GetBinContent(i)
+    SF=0
+    if IsSF=="sf":
+        SF=hist.GetBinContent(i)
+    else:
+        SF=hist.GetBinError(i)
     return SF
 
 def HasPixSFyearwise(files=[],names=[],valtypes=["sf","syst"]):
@@ -133,7 +141,7 @@ def HasPixSFyearwise(files=[],names=[],valtypes=["sf","syst"]):
                                             "nodetype": "category",
                                             "input": "HasPixBin",
                                             "content": [schema.CategoryItem.parse_obj({"key": binlist[i-1], 
-                                                                                       "value": HasPixSFs(files,name,i)})
+                                                                                       "value": HasPixSFs(files,name,i,val)})
                                                         for i in range(1,7)
                                                        ],
                                         })
