@@ -69,4 +69,88 @@ def SFyearwise(files=[],names=[],valtypes=["sf","syst"]):
                     for val in valtypes
                 ],
     })
-    return output    
+    return output
+
+
+def CSEVSFs(files,name,i,IsSF="sf"):
+    file=TFile(files[name])
+    hist=file.Get(name+"ID/SF_CSEV_"+name+"ID")
+    SF=0
+    if IsSF=="sf":
+        SF=hist.GetBinContent(i)
+    else:
+        SF=hist.GetBinError(i)
+    return SF
+
+def CSEVSFyearwise(files=[],names=[],valtypes=["sf","syst"]):
+    binlist=['EBInc','EBHighR9','EBLowR9','EEInc','EEHighR9','EELowR9']
+    output = schema.Category.parse_obj({
+                "nodetype": "category",
+                "input": "ValType",
+                "content":[
+                    schema.CategoryItem.parse_obj({
+                        "key": val, 
+                        "value": schema.Category.parse_obj({
+                            "nodetype": "category",
+                            "input": "WorkingPoint",
+                            "content":[
+                                schema.CategoryItem.parse_obj({
+                                        "key": name, 
+                                        "value": schema.Category.parse_obj({
+                                            "nodetype": "category",
+                                            "input": "CSEVBin",
+                                            "content": [schema.CategoryItem.parse_obj({"key": binlist[i-1], 
+                                                                                       "value": CSEVSFs(files,name,i,val)})
+                                                        for i in range(1,7)
+                                                       ],
+                                        })
+                                })
+                                for name in names
+                                ],
+                            })
+                    })
+                    for val in valtypes
+                ],
+    })
+    return output
+def HasPixSFs(files,name,i,IsSF="sf"):
+    file=TFile(files[name])
+    hist=file.Get(name+"ID/SF_HasPix_"+name+"ID")
+    SF=0
+    if IsSF=="sf":
+        SF=hist.GetBinContent(i)
+    else:
+        SF=hist.GetBinError(i)
+    return SF
+
+def HasPixSFyearwise(files=[],names=[],valtypes=["sf","syst"]):
+    binlist=['EBInc','EBHighR9','EBLowR9','EEInc','EEHighR9','EELowR9']
+    output = schema.Category.parse_obj({
+                "nodetype": "category",
+                "input": "ValType",
+                "content":[
+                    schema.CategoryItem.parse_obj({
+                        "key": val, 
+                        "value": schema.Category.parse_obj({
+                            "nodetype": "category",
+                            "input": "WorkingPoint",
+                            "content":[
+                                schema.CategoryItem.parse_obj({
+                                        "key": name, 
+                                        "value": schema.Category.parse_obj({
+                                            "nodetype": "category",
+                                            "input": "HasPixBin",
+                                            "content": [schema.CategoryItem.parse_obj({"key": binlist[i-1], 
+                                                                                       "value": HasPixSFs(files,name,i,val)})
+                                                        for i in range(1,7)
+                                                       ],
+                                        })
+                                })
+                                for name in names
+                                ],
+                            })
+                    })
+                    for val in valtypes
+                ],
+    })
+    return output
