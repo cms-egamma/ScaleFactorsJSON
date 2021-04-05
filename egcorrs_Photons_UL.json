@@ -2,7 +2,7 @@
     "schema_version": 2,
     "corrections": [
         {
-            "name": "PhotonsUL",
+            "name": "UL-Photon-ID-SF",
             "version": 2,
             "inputs": [
                 {
@@ -3587,7 +3587,7 @@
             }
         },
         {
-            "name": "PhotonULHasPix",
+            "name": "UL-Photon-PixVeto-SF",
             "version": 2,
             "inputs": [
                 {
@@ -4783,7 +4783,7 @@
             }
         },
         {
-            "name": "PhotonULCSEV",
+            "name": "UL-Photon-CSEV-SF",
             "version": 2,
             "inputs": [
                 {
