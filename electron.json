@@ -3,6 +3,7 @@
     "corrections": [
         {
             "name": "UL-Electron-ID-SF",
+            "description": "Electron ID Scale Factors for Ultra Legacy",
             "version": 2,
             "inputs": [
                 {
@@ -33,7 +34,8 @@
             ],
             "output": {
                 "name": "weight",
-                "type": "real"
+                "type": "real",
+                "description": "value of scale factor or systematic uncertainty"
             },
             "data": {
                 "nodetype": "category",

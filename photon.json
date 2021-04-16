@@ -3,6 +3,7 @@
     "corrections": [
         {
             "name": "UL-Photon-ID-SF",
+            "description": "Photon ID Scale Factors for Ultra Legacy",
             "version": 2,
             "inputs": [
                 {
@@ -33,7 +34,8 @@
             ],
             "output": {
                 "name": "weight",
-                "type": "real"
+                "type": "real",
+                "description": "value of scale factor or systematic uncertainty"
             },
             "data": {
                 "nodetype": "category",
@@ -3592,6 +3594,7 @@
         },
         {
             "name": "UL-Photon-PixVeto-SF",
+            "description": "Photon Pixel Veto Scale Factors for Ultra Legacy",
             "version": 2,
             "inputs": [
                 {
@@ -3617,7 +3620,8 @@
             ],
             "output": {
                 "name": "weight",
-                "type": "real"
+                "type": "real",
+                "description": "value of scale factor or systematic uncertainty"
             },
             "data": {
                 "nodetype": "category",
@@ -4792,6 +4796,7 @@
         },
         {
             "name": "UL-Photon-CSEV-SF",
+            "description": "Photon CSEV Scale Factors for Ultra Legacy",
             "version": 2,
             "inputs": [
                 {
@@ -4817,7 +4822,8 @@
             ],
             "output": {
                 "name": "weight",
-                "type": "real"
+                "type": "real",
+                "description": "value of scale factor or systematic uncertainty"
             },
             "data": {
                 "nodetype": "category",
