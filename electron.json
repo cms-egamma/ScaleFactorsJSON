@@ -3,33 +3,39 @@
     "corrections": [
         {
             "name": "UL-Electron-ID-SF",
+            "description": "Electron ID Scale Factors for Ultra Legacy",
             "version": 2,
             "inputs": [
                 {
                     "name": "year",
-                    "type": "string"
+                    "type": "string",
+                    "description": "year/scenario: example 2016preVFP, 2017 etc"
                 },
                 {
                     "name": "ValType",
-                    "type": "string"
+                    "type": "string",
+                    "description": "sf or syst (Currently syst is total syst) "
                 },
                 {
                     "name": "WorkingPoint",
-                    "type": "string"
+                    "type": "string",
+                    "description": "Working Point of choice : Loose, Medium etc."
                 },
                 {
                     "name": "eta",
                     "type": "real",
-                    "description": "possibly supercluster eta?"
+                    "description": "supercluster eta"
                 },
                 {
                     "name": "pt",
-                    "type": "real"
+                    "type": "real",
+                    "description": "electron pT"
                 }
             ],
             "output": {
                 "name": "weight",
-                "type": "real"
+                "type": "real",
+                "description": "value of scale factor or systematic uncertainty"
             },
             "data": {
                 "nodetype": "category",
