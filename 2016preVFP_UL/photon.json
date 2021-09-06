@@ -1,5 +1,6 @@
 {
     "schema_version": 2,
+    "description": "These are the photon ID, Pixel veto and CSEV Scale Factors and uncertainties for 2016preVFP Ultra Legacy dataset. Each kind of scale factors and uncertainties, depend on the chosen working point, some other quantities. More information is below!",
     "corrections": [
         {
             "name": "UL-Photon-ID-SF",

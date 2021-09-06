@@ -1,9 +1,10 @@
 {
     "schema_version": 2,
+    "description": "These are the electron ID Scale Factors and uncertainties for 2018 Ultra Legacy dataset. They are available for the cut-based and MVA IDs. They are dependent on the transverse momenta and pseudorapidity of the electron.",
     "corrections": [
         {
             "name": "UL-Electron-ID-SF",
-            "description": "These are the electron ID Scale Factors and uncertainties for 2018 Ultra Legacy dataset. They are available for the cut-based and MVA IDs. They are dependent on the transverse momenta and pseudorapidity of the photon.",
+            "description": "These are the electron ID Scale Factors and uncertainties for 2018 Ultra Legacy dataset. They are available for the cut-based and MVA IDs. They are dependent on the transverse momenta and pseudorapidity of the electron.",
             "version": 2,
             "inputs": [
                 {
