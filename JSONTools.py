@@ -2,6 +2,7 @@
 from ROOT import TFile, TH1F, TCanvas, TString
 import correctionlib.schemav2 as schema
 from correctionlib.schemav2 import Correction
+from math import fabs
 corrs=[]
 #Function to extract SFs from EGamma standard root files
 def getSFs(fn="filename",IsSF="sf",sfhist="EGamma_SF2D"):
@@ -10,15 +11,19 @@ def getSFs(fn="filename",IsSF="sf",sfhist="EGamma_SF2D"):
     Xbins=fo.GetNbinsX()
     Ybins=fo.GetNbinsY()
     X=[None]*(Xbins+1)
+    
     Y=[None]*(Ybins+1)
+    #print("Y: "+str(Y))
     values=[]
     errors=[]
     for i in range(1,Xbins + 1):
-        X[i-1]=(fo.GetXaxis().GetBinLowEdge(i))
-    X[Xbins]=fo.GetXaxis().GetBinUpEdge(Xbins)
+        X[i-1]=(fo.GetXaxis().GetBinLowEdge(i)) if fo.GetXaxis().GetBinLowEdge(i)!=-2.5 else float('-inf')
+    X[Xbins]=fo.GetXaxis().GetBinUpEdge(Xbins) if fo.GetXaxis().GetBinUpEdge(Xbins)!=2.5 else float('inf')
+    print("X: "+str(X))
     for j in range(1,Ybins + 1):
         Y[j-1]=(fo.GetYaxis().GetBinLowEdge(j))
-    Y[Ybins]=fo.GetYaxis().GetBinUpEdge(Ybins)
+    Y[Ybins]=fo.GetYaxis().GetBinUpEdge(Ybins) if fo.GetYaxis().GetBinUpEdge(Ybins)!=500 else float('inf')
+    print("Y: "+str(Y))
     for i in range(1,Xbins + 1):
         for j in range(1,Ybins + 1):
             values.append(fo.GetBinContent(i,j))
@@ -34,21 +39,34 @@ def getSFs(fn="filename",IsSF="sf",sfhist="EGamma_SF2D"):
             "content": values,
             "flow": 'error',
         })
+        
         return valSFs
-    if IsSF=="syst":
-        valerrors=schema.MultiBinning.parse_obj({
+    if IsSF=="sfup":
+        valerrorsup=schema.MultiBinning.parse_obj({
             "inputs":["eta","pt"],
             "nodetype": "multibinning",
             "edges": [
                 X,
                 Y,
             ],
-            "content": errors,
+            "content": [m + n for m,n in zip(values,errors)],
             "flow": 'error',
         })
-        return valerrors
+        return valerrorsup
+    if IsSF=="sfdown":
+        valerrorsdown=schema.MultiBinning.parse_obj({
+            "inputs":["eta","pt"],
+            "nodetype": "multibinning",
+            "edges": [
+                X,
+                Y,
+            ],
+            "content": [m - n for m,n in zip(values,errors)],
+            "flow": 'error',
+        })
+        return valerrorsdown
     
-def SFyearwise(files=[],names=[],valtypes=["sf","syst"]):
+def SFyearwise(files=[],names=[],valtypes=["sf","sfup","sfdown"]):
     output = schema.Category.parse_obj({
                 "nodetype": "category",
                 "input": "ValType",
@@ -79,10 +97,13 @@ def CSEVSFs(files,name,i,IsSF="sf"):
     if IsSF=="sf":
         SF=hist.GetBinContent(i)
     else:
-        SF=hist.GetBinError(i)
+        if IsSF=="sfup":
+            SF=hist.GetBinContent(i)+hist.GetBinError(i)
+        if IsSF=="sfdown":
+            SF=hist.GetBinContent(i)-hist.GetBinError(i)
     return SF
 
-def CSEVSFyearwise(files=[],names=[],valtypes=["sf","syst"]):
+def CSEVSFyearwise(files=[],names=[],valtypes=["sf","sfup","sfdown"]):
     binlist=['EBInc','EBHighR9','EBLowR9','EEInc','EEHighR9','EELowR9']
     output = schema.Category.parse_obj({
                 "nodetype": "category",
@@ -120,10 +141,13 @@ def HasPixSFs(files,name,i,IsSF="sf"):
     if IsSF=="sf":
         SF=hist.GetBinContent(i)
     else:
-        SF=hist.GetBinError(i)
+        if IsSF=="sfup":
+            SF=hist.GetBinContent(i)+hist.GetBinError(i)
+        if IsSF=="sfdown":
+            SF=hist.GetBinContent(i)-hist.GetBinError(i)
     return SF
 
-def HasPixSFyearwise(files=[],names=[],valtypes=["sf","syst"]):
+def HasPixSFyearwise(files=[],names=[],valtypes=["sf","sfup","sfdown"]):
     binlist=['EBInc','EBHighR9','EBLowR9','EEInc','EEHighR9','EELowR9']
     output = schema.Category.parse_obj({
                 "nodetype": "category",
