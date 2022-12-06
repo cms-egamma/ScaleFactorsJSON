@@ -89,6 +89,54 @@ def SFyearwise(files=[],names=[],valtypes=["sf","sfup","sfdown"]):
     })
     return output
 
+def getScaleUnc(year,val,etabin,gain):
+    
+    SandSdict={
+        "2016preVFP" :{ "EBin":{12 : 0.05, 6 : 0.5, 1 : 2.0}, "EBout":{12 : 0.075, 6 : 0.5, 1 : 2.0}, "EE":{12 : 0.15,  6 : 1.0,  1 : 3.0} },
+        "2016postVFP":{ "EBin":{12 : 0.05, 6 : 0.5, 1 : 2.0}, "EBout":{12 : 0.075, 6 : 0.5, 1 : 2.0}, "EE":{12 : 0.15,  6 : 1.0,  1 : 3.0} },
+        "2017"        :{ "EBin":{12 : 0.05, 6 : 0.5, 1 : 1.0}, "EBout":{12 : 0.05,  6 : 0.5, 1 : 1.0}, "EE":{12 : 0.1,   6 : 0.5,  1 : 2.0} },
+        "2018"        :{ "EBin":{12 : 0.05, 6 : 0.5, 1 : 1.0}, "EBout":{12 : 0.05,  6 : 0.5, 1 : 1.0}, "EE":{12 : 0.125, 6 : 0.75, 1 : 2.0} }
+    }
+    
+    if val=="scaleup":
+        return (1+ SandSdict[year][etabin][gain]/100.)
+    elif val=="scaledown": 
+        return (1- SandSdict[year][etabin][gain]/100.)
+    else:
+        return (SandSdict[year][etabin][gain]/100.)
+
+def getScaleUncbins(year,val,gain):
+    etabins=[float('-inf'),-1.442, -1, 0, 1, 1.442, float('inf')]
+    return schema.MultiBinning.parse_obj({
+        "inputs":["eta"],
+        "nodetype": "multibinning",
+        "edges": [etabins],
+        "content": [getScaleUnc(year,val,etabin,gain) for etabin in ['EE','EBout','EBin','EBin','EBout','EE']] ,
+        "flow": 'error'})
+
+def ScaleUnc(year,valtypes=["scaleup","scaledown","scaleunc"]):
+    gains=[12,6,1]
+    output = schema.Category.parse_obj({
+                "nodetype": "category",
+                "input": "ValType",
+                "content":[
+                    schema.CategoryItem.parse_obj({
+                        "key": val, 
+                        "value":schema.Category.parse_obj({
+                            "nodetype": "category",
+                            "input": "gain",
+                            "content":[schema.CategoryItem.parse_obj({"key": gain, 
+                                                                      "value": getScaleUncbins(year,val,gain)})
+                                       for gain in gains
+                                      ],
+                                    })
+                    })
+                    for val in valtypes
+                ],
+    })
+    return output
+
+
 
 def CSEVSFs(files,name,i,IsSF="sf"):
     file=TFile(files[name])
